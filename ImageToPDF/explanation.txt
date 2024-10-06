@@ -1,0 +1,11 @@
+The "F" at the end of the pdf.output("yourfile.pdf", "F") line is a destination flag that tells the FPDF library where to send the generated PDF file.
+
+In this case, the "F" flag stands for "File", which means the PDF file will be saved to a file on the local file system. The file path and name are specified by the first argument to the output() method, which is "yourfile.pdf".
+
+Here are the possible destination flags that can be used with the output() method:
+
+"I" : Send the PDF file to the standard output (usually the browser)
+"D" : Send the PDF file to the browser and force a file download
+"F" : Save the PDF file to a file on the local file system
+"S" : Return the PDF file as a string
+So, in this specific case, the "F" flag is used to save the generated PDF file to a file named "yourfile.pdf" on the local file system.

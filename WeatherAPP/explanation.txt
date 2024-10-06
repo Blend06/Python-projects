@@ -1,0 +1,10 @@
+In this code, json() is a method provided by the requests library in Python. It's used to parse the JSON (JavaScript Object Notation) response from the OpenWeatherMap API.
+
+When you make a GET request to the API using requests.get(), the response is in JSON format, which is a lightweight and easy-to-parse data interchange format. The json() method converts this JSON response into a Python dictionary, making it easier to access and manipulate the data.
+
+In this specific code, weather_data.json() is used to parse the JSON response from the API. The resulting dictionary is then used to access specific data, such as the weather condition (weather_data.json()['weather'][0]['main']) and temperature (weather_data.json()['main']['temp']).
+
+https://api.openweathermap.org/data/2.5/weather is the base URL of the OpenWeatherMap API.
+q={user_input} is a query parameter that specifies the city name to search for. The {user_input} is replaced with the actual user input from the input function.
+&units=metric is another query parameter that specifies the unit of measurement for the temperature (in this case, metric).
+&APPID={api_key} is a query parameter that specifies the API key for authentication. The {api_key} is replaced with the actual API key stored in the api_key variable.
